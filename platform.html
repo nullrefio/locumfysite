@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Platform — Locumfy</title>
+<meta name="description" content="Resume parsing into eighteen structured sections, credential verification against official healthcare records, standardized and anonymized resumes, connection matching, and the workflows behind the Locumfy marketplace.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:title" content="The Platform — Locumfy">
+<meta property="og:description" content="Resume parsing into eighteen structured sections, credential verification against official healthcare records, standardized and anonymized resumes, connection matching, and the workflows behind the Locumfy marketplace.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a4480"/><stop offset="1" stop-color="#12a89d"/></linearGradient></defs><rect width="64" height="64" rx="15" fill="url(#hg)"/><path d="M20 15v27h17" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 49h9l4-8 5 15 5-11 3 4h14" fill="none" stroke="#9ff2e6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Locumfy</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="professionals.html">For Professionals</a></li>
+      <li><a href="facilities.html">For Facilities</a></li>
+      <li><a href="platform.html" class="active">Platform</a></li>
+      <li><a href="screens.html">Product Tour</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="section-head" style="max-width:840px;margin-bottom:0">
+      <span class="eyebrow">The platform</span>
+      <h1>How Locumfy turns resumes into a working marketplace.</h1>
+      <p class="lead">
+        Underneath the app and the portal sits an engine that reads unstructured resumes, structures
+        what it finds, verifies it against official records, and uses the result to match people to
+        roles and to each other. This is what makes a healthcare network different from a general one.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section id="parsing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Resume parsing</span>
+      <h2>Eighteen structured sections out of one document.</h2>
+      <p class="lead">
+        A resume arrives as a PDF or a Word file — prose, tables, inconsistent headings and all. The
+        parsing engine extracts the text, identifies its structure, and writes the content into
+        discrete, searchable records.
+      </p>
+    </div>
+
+    <div class="split wide-left">
+      <div>
+        <ul class="chips" style="margin-bottom:22px">
+          <li>Awards</li><li>Certifications</li><li>Education</li><li>Employment</li>
+          <li>Internships</li><li>Languages</li><li>Memberships</li><li>Presentations</li>
+          <li>Publications</li><li>References</li><li>Research</li><li>Residencies</li>
+          <li>Skills</li><li>Specialties</li><li>State preferences</li><li>State licenses</li>
+          <li>Titles</li><li>Volunteer</li>
+        </ul>
+        <p>
+          Because each section is stored as data rather than text, a facility can filter on an exact
+          certification, a specific residency, or a state licence — and the platform can match a
+          professional to a role on the same detail.
+        </p>
+      </div>
+      <div class="card">
+        <h3>What the engine handles</h3>
+        <ul class="flist" style="margin-top:16px;margin-bottom:0">
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span><span><strong>Mixed formats</strong> <span class="d">— PDF and Word documents, including scanned layouts and multi-column designs.</span></span></li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span><span><strong>Inconsistent headings</strong> <span class="d">— the same section written a dozen different ways still lands in the right bucket.</span></span></li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span><span><strong>Dates and durations</strong> <span class="d">— employment and education periods normalised so experience can be calculated.</span></span></li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span><span><strong>Identifiers</strong> <span class="d">— licence and registration numbers pulled out and handed to the verification stage.</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="deep" id="verification">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Credential verification</span>
+      <h2>Cross-checked against official healthcare records.</h2>
+      <p class="lead" style="color:#b9c7dd">
+        A parsed profile is matched against the national provider registry using a set of identity
+        heuristics. Once a match is established, the associated public record is linked to the
+        professional and carried through the platform.
+      </p>
+    </div>
+
+    <div class="grid g4">
+      <div class="card"><h3>Provider registry</h3><p>National provider identification matched and linked to the profile.</p></div>
+      <div class="card"><h3>State licences</h3><p>Licences held by state, with issuing detail and expiry carried on the record.</p></div>
+      <div class="card"><h3>Registrations</h3><p>Prescribing and programme registration numbers associated with the verified identity.</p></div>
+      <div class="card"><h3>Practice detail</h3><p>Registered practice locations and other verifiable public record attached to the profile.</p></div>
+    </div>
+
+    <div class="callout" style="margin-top:36px;background:rgba(79,208,196,.1);border-left-color:#4fd0c4;color:#dbe6f5">
+      <p><strong style="color:#fff">Why it matters.</strong> A facility looking at a Locumfy profile is not
+      taking a candidate's word for a licence. The verification state travels with the credential —
+      through search results, through an application, and onto the standardized resume.</p>
+    </div>
+  </div>
+</section>
+
+<section id="resumes">
+  <div class="wrap">
+    <div class="split wide-left">
+      <div>
+        <span class="eyebrow">Standardized resumes</span>
+        <h2>One click from a profile to a facility-ready document.</h2>
+        <p>
+          Reformatting a resume for every submission — and stripping out the personal details a
+          third-party submission is not allowed to carry — is the manual task that consumes recruiting
+          time. Locumfy generates the document instead.
+        </p>
+      <ul class="flist">
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span>
+          <span><strong>Consistent format</strong> <span class="d">— every candidate presented in the same structure, built from the same underlying data.</span></span></li>
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span>
+          <span><strong>Anonymized on demand</strong> <span class="d">— name, contact details and employer names removed for third-party submission, with the clinical substance intact.</span></span></li>
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span>
+          <span><strong>Compiled for the recipient</strong> <span class="d">— the requesting organisation is shown on the document, so it is clear who prepared it.</span></span></li>
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M4.6 9.4 1.2 6l1.1-1.1 2.3 2.2 4.9-5L10.7 3 4.6 9.4Z"/></svg></span>
+          <span><strong>Generated live</strong> <span class="d">— the resume is produced from the current profile, so it never goes stale.</span></span></li>
+      </ul>
+      </div>
+      <div class="media">
+      <figure>
+        <div class="browser shot">
+          <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.locumfy.com/candidates</span></div>
+          <img src="assets/img/portal-candidates.png" alt="The Candidates page in the facility portal, where a standardized resume can be downloaded for any professional." width="848">
+        </div>
+        <figcaption>Standardized resumes are generated from the candidate list</figcaption>
+      </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="network">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The connection graph</span>
+      <h2>Suggestions built on real professional overlap.</h2>
+      <p class="lead">
+        Structured profiles make it possible to reason about who is likely to know whom. Shared
+        employers, overlapping dates, the same school, the same specialty and the same geography all
+        contribute to a match score, and the strongest candidates surface in the Grow tab.
+      </p>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM7 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm10 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM9.6 11.4l4.9-2.9 1 1.7-4.9 2.9-1-1.7Zm0 1.2 1-1.7 4.9 2.9-1 1.7-4.9-2.9Z"/></svg></div>
+        <h3>Shared history</h3>
+        <p>Two clinicians who worked the same unit in the same years are far more likely to know each other than two who simply share a title.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 2 8l10 5 8-4v6h2V8L12 3ZM6 13.2V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-3.8l-6 3-6-3Z"/></svg></div>
+        <h3>Training overlap</h3>
+        <p>Schools, residencies and internships place people together at a point in time — a strong signal the graph uses.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></div>
+        <h3>Specialty and region</h3>
+        <p>Within a discipline and a geography the professional community is small, and the suggestions reflect that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="workflows">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Workflows</span>
+      <h2>Clear rules that keep both sides in control.</h2>
+      <p class="lead">
+        Applications and timesheets each move through an explicit set of states. Nothing is implied,
+        and both parties always know where a piece of work stands.
+      </p>
+    </div>
+
+    <div class="grid g2">
+      <div>
+        <h3 style="margin-bottom:14px">The job application</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>State</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Applied</td><td>The professional has applied and the facility can see the application.</td></tr>
+              <tr><td class="k">Withdrawn</td><td>The professional pulled out before acceptance. The application closes and becomes read-only.</td></tr>
+              <tr><td class="k">Accepted</td><td>The facility accepted. Every other open application for that professional is set aside so nobody is double-booked.</td></tr>
+              <tr><td class="k">Declined</td><td>The facility passed on the application.</td></tr>
+              <tr><td class="k">Complete</td><td>The facility closed the assignment. Approved hours stand as the record of the work.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:14px">The timesheet</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>State</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Open</td><td>The professional is recording hours against an active assignment.</td></tr>
+              <tr><td class="k">Submitted</td><td>The professional has signed off the week and sent it to the facility.</td></tr>
+              <tr><td class="k">Approved</td><td>The facility that posted the role has reviewed and approved the hours.</td></tr>
+              <tr><td class="k">Rejected</td><td>The facility sent it back; the professional can correct and resubmit.</td></tr>
+              <tr><td class="k">Paid</td><td>The approved hours have been settled and the record closed.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:34px">
+      <p><strong>Only the right party can act.</strong> A timesheet can only be created against an
+      assignment a professional has actually been accepted for, and only the facility that posted the
+      role can approve it. The rules are enforced by the platform, not by convention.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="architecture">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Architecture</span>
+      <h2>One interface behind three applications.</h2>
+      <p class="lead">
+        The mobile app, the web experience and the facility portal all talk to the same versioned
+        interface, which sits on a shared service and data layer. That is why feature parity across
+        screens is structural rather than something that has to be maintained by hand.
+      </p>
+    </div>
+
+    <div class="table-wrap" style="margin-bottom:30px">
+      <table>
+        <thead><tr><th style="width:32%">Concern</th><th>Approach</th></tr></thead>
+        <tbody>
+          <tr><td class="k">Interface</td><td>A single versioned REST interface, documented with an OpenAPI specification.</td></tr>
+          <tr><td class="k">Authentication</td><td>Signed tokens issued by the platform, with distinct professional and facility roles.</td></tr>
+          <tr><td class="k">Application layer</td><td>Feature-sliced services with a shared validation engine, on a modern cross-platform runtime.</td></tr>
+          <tr><td class="k">Data</td><td>A code-first relational model covering profiles, credentials, jobs, applications, messaging and timesheets.</td></tr>
+          <tr><td class="k">Web applications</td><td>Single-page applications for professionals, facilities and operations.</td></tr>
+          <tr><td class="k">Mobile application</td><td>A cross-platform native app for professionals, sharing the same interface as the web.</td></tr>
+          <tr><td class="k">Documents</td><td>Server-side document rendering for standardized and anonymized resumes.</td></tr>
+          <tr><td class="k">Storage</td><td>Encrypted cloud object storage for uploaded documents.</td></tr>
+          <tr><td class="k">Language models</td><td>A configurable model provider — hosted or run locally — used for profile summaries and assisted structuring.</td></tr>
+          <tr><td class="k">Observability</td><td>Structured logging across the interface and service layers.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid g3">
+      <div class="card">
+        <h3>Parity by construction</h3>
+        <p>The app and the web are built against the same contract, so a feature exists on both or on neither.</p>
+      </div>
+      <div class="card">
+        <h3>Role-aware by default</h3>
+        <p>Professional and facility permissions are enforced at the interface, not assembled in each client.</p>
+      </div>
+      <div class="card">
+        <h3>Measured end to end</h3>
+        <p>Every state change is recorded, which is what makes the operations dashboard possible without manual reporting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="operations">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Operations</span>
+        <h2>The whole marketplace, measured.</h2>
+        <p>
+          Because every profile, application, message and timesheet is structured data, the state of
+          the platform can be read directly rather than reconstructed. The operations dashboard covers
+          growth and registrations, marketplace liquidity, engagement and usage, recruiter activity,
+          candidate supply and quality, hours worked, content and communications, and operational
+          health — each filterable by profession, state, title and period.
+        </p>
+    </div>
+      <figure>
+        <div class="browser shot">
+          <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">admin.locumfy.com/engagement</span></div>
+          <img src="assets/img/admin-analytics.png" alt="The operations dashboard showing daily, weekly and monthly active users, session length, platform mix and feature adoption." width="1200">
+        </div>
+      </figure>
+  </div>
+</section>
+
+<section class="tint tight">
+  <div class="wrap">
+    <div class="next-grid">
+      <a class="next" href="professionals.html"><h3>For medical professionals</h3><p>Profile, network, jobs, messaging and timesheets.</p><span class="go">Read more &rarr;</span></a>
+      <a class="next" href="facilities.html"><h3>For facilities &amp; recruiters</h3><p>Candidate search, hiring pipeline and hour approval.</p><span class="go">Read more &rarr;</span></a>
+      <a class="next" href="screens.html"><h3>Product tour</h3><p>Every screen, side by side.</p><span class="go">Read more &rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="font-size:1.2rem"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a4480"/><stop offset="1" stop-color="#12a89d"/></linearGradient></defs><rect width="64" height="64" rx="15" fill="url(#fg)"/><path d="M20 15v27h17" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 49h9l4-8 5 15 5-11 3 4h14" fill="none" stroke="#9ff2e6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Locumfy</div>
+        <p>The professional network and work marketplace built for nurses, therapists, physicians and allied health professionals.</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="professionals.html">For professionals</a></li>
+          <li><a href="facilities.html">For facilities</a></li>
+          <li><a href="platform.html">How it works</a></li>
+          <li><a href="screens.html">Product tour</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Capabilities</h4>
+        <ul>
+          <li><a href="platform.html#parsing">Resume parsing</a></li>
+          <li><a href="platform.html#verification">Credential verification</a></li>
+          <li><a href="platform.html#network">Connection matching</a></li>
+          <li><a href="platform.html#architecture">Architecture</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Locumfy. All rights reserved.</span>
+      <span>Connecting medical professionals with healthcare facilities.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
